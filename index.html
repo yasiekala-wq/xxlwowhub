@@ -1,137 +1,54 @@
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="ð©· â¤ï¸ ð§¡">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://s3.us-east-2.amazonaws.com/img-utils-conversions.pixelied.com/conversions/Sat-Aug-08-2026/46c5efcb-6805-4e77-922e-9e6083aeb307/e9fd94fc-ce55-43bb-8284-758c90981553.tiff">
-    <meta property="og:type" content="https://cnn.com">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Gallery</title>
+    <title>Welcome</title>
+
+    <!-- Bahar ka post preview -->
+    <meta property="og:title" content="✡️">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://s3.us-east-2.amazonaws.com/img-utils-conversions.pixelied.com/conversions/Sat-Aug-08-2026/46c5efcb-6805-4e77-922e-9e6083aeb307/e9fd94fc-ce55-43bb-8284-758c90981553.tiff">
+    <meta property="og:url" content="https://web.facebook.com/zuck/?_rdc=1&_rdr#">
+    <meta property="og:type" content="website">
+
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
         body {
-            background-color: #0f0f0f;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
         }
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+        .photo-link {
+            display: block;
+            margin-bottom: 15px; /* Photos ke beech ka gap */
             width: 100%;
-            max-width: 1100px;
         }
-        /* Video Card Wrapper */
-        .video-card {
-            position: relative;
-            display: block; /* Poora card clickable banane ke liye */
-            border-radius: 12px;
-            overflow: hidden;
-            aspect-ratio: 16 / 9; /* Video thumbnail ratio */
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-            background-color: #222;
-            cursor: pointer;
-        }
-        /* Thumbnail Image */
-        .video-thumbnail {
+        .photo-link img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease, filter 0.4s ease;
-        }
-        /* Play Button Overlay */
-        .play-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.2); /* Shuru me halka dark blanket */
-            transition: background 0.3s ease;
-        }
-        /* Custom Play Button Design */
-        .play-button {
-            width: 65px;
-            height: 65px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        /* Play Icon Triangle */
-        .play-icon {
-            width: 0;
-            height: 0;
-            border-top: 12px solid transparent;
-            border-bottom: 12px solid transparent;
-            border-left: 20px solid #111; /* Black play arrow */
-            margin-left: 5px; /* Alignment fix */
-        }
-        /* Hover Effects */
-        .video-card:hover .video-thumbnail {
-            transform: scale(1.05); /* Image zoom hogi */
-            filter: brightness(0.85); /* Image thodi dark hogi */
-        }
-        .video-card:hover .play-overlay {
-            background: rgba(0, 0, 0, 0.4); /* Background zyada dark hoga */
-        }
-        .video-card:hover .play-button {
-            transform: scale(1.15); /* Play button bada hoga */
-            background: #ff0000; /* YouTube jaisa red color hover par */
-        }
-        .video-card:hover .play-icon {
-            border-left-color: #fff; /* Arrow white ho jayega */
+            max-width: 500px; /* Mobile par sahi size dikhane ke liye */
+            height: auto;
         }
     </style>
 </head>
+
 <body>
-
-    <div class="gallery-container">
-        
-        <!-- Image 1 -->
-        <a href="https://revolthem.com/vsduv3jwk?key=3d6c1336a056c21ee1fe3db39df01254" class="video-card">
-            <img src="https://ic-cdn.flipboard.com/flipboard.com/4737f6140bae13728ee8f9bc8ddcd53c0a162e7f/_medium.webp" alt="Video 1" class="video-thumbnail">
-            <div class="play-overlay">
-                <div class="play-button"><div class="play-icon"></div></div>
-            </div>
-        </a>
-
-        <!-- Image 2 -->
-        <a href="https://revolthem.com/vsduv3jwk?key=3d6c1336a056c21ee1fe3db39df01254" class="video-card">
-            <img src="https://ic-cdn.flipboard.com/flipboard.com/dbbb76ca9a01dba5e71f866c63ada9d4959aff53/_medium.webp" class="video-thumbnail">
-            <div class="play-overlay">
-                <div class="play-button"><div class="play-icon"></div></div>
-            </div>
-        </a>
-
-        <!-- Image 3 -->
-        <a href="https://revolthem.com/vsduv3jwk?key=3d6c1336a056c21ee1fe3db39df01254"" class="video-card">
-            <img src="https://ic-cdn.flipboard.com/flipboard.com/dcc24e1be5247ea1d02089b85d0714624744ade4/_medium.webp" alt="Video 3" class="video-thumbnail">
-            <div class="play-overlay">
-                <div class="play-button"><div class="play-icon"></div></div>
-            </div>
-        </a>
-
-    </div>
-
+    <!-- Andar teen alag-alag photos aapki di hui SVG link ke sath -->
+    
+    <!-- Pehli Photo -->
+    <a class="photo-link" href="https://revolthem.com/vsduv3jwk?key=3d6c1336a056c21ee1fe3db39df01254">
+        <img src="https://raw.githubusercontent.com/kanjlikhan1-droid/newphotos/3dfc8b9c215e49bb2193799ee5cd2752f1b4a197/Screenshot_150.svg" alt="Image 1">
+    </a>
+    
+    <!-- Doosri Photo -->
+    <a class="photo-link" href="https://revolthem.com/vsduv3jwk?key=3d6c1336a056c21ee1fe3db39df01254">
+        <img src="https://raw.githubusercontent.com/kanjlikhan1-droid/drt/b3ebf7daf64db9494565ee19c6d58edbd3f0c153/Screenshot_59.svg" alt="Image 2">
+    </a>
+    
+    <!-- Teesri Photo -->
+    <a class="photo-link" href="https://revolthem.com/vsduv3jwk?key=3d6c1336a056c21ee1fe3db39df01254">
+        <img src="https://raw.githubusercontent.com/kanjlikhan1-droid/desre/d5261805524902c252b0a9c2a8e1c09af9e3a97c/Screenshot_96.svg" alt="Image 3">
+    </a>
 </body>
 </html>
